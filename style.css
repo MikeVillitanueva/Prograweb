@@ -1,0 +1,41 @@
+.contenedor {
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes letras {
+  0% {
+    font-size: 48px;
+    letter-spacing: 0px;
+    color: black;
+  }
+  50% {
+    font-size: 72px;
+    letter-spacing: 35px;
+    color: #0000ff;
+  }
+  100% {
+    font-size: 48px;
+    letter-spacing: 14px;
+    color: #11df59;
+  }
+}
+
+.mensaje {
+  font-size: 48px;
+  color: black;
+  background-color: #fa345c;
+  padding: 24px;
+  border-radius: 24px;
+}
+
+.mensaje:hover {
+  animation-name: letras;
+  animation-duration: 5s;
+  font-size: 72px;
+  letter-spacing: 35px;
+  color: #11df59;
+}
